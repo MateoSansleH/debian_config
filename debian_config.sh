@@ -5,6 +5,7 @@ utilisateur = administrateur
 install_all_needed_package(){
         apt-get update && apt-get upgrade
         apt-get install screen nano vim tree sudo
+        apt-get install tmux
 }
 
 delete_cdrom_sources(){
@@ -16,7 +17,7 @@ add_sudoUSR(){
 }
 
 main(){
-        delete_cdrom_sources
+        #delete_cdrom_sources
         install_all_needed_package
         add_sudoUSR
 }                            
